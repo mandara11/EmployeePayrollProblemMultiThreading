@@ -137,5 +137,16 @@ namespace EmployeePayrollSystemThreads
             return this.employeePayrollDetailList.Count;
         }
 
+        public void Display()
+        {
+            foreach (EmployeeDetails employee in this.employeePayrollDetailList)
+            {
+                Console.WriteLine(employee.EmployeeID + " " + employee.EmployeeName + " " + employee.PhoneNumber + " " + employee.Address
+                    + " " + employee.Department + " " + employee.Gender + " " + employee.BasicPay + " " + employee.Deductions + " " +
+                    employee.TaxablePay + " " + employee.Tax + " " + employee.NetPay + " " + employee.StartDate + " " + employee.City
+                    + " " + employee.Gender);
+            }
+        }
+
     }
 }

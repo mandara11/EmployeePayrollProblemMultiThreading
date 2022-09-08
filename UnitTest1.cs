@@ -34,7 +34,6 @@ namespace EmployeePayRollTest
             DateTime stopDateTimeThread = DateTime.Now;
             Console.WriteLine("Duration with thread: " + (stopDateTimeThread - startDateTimeThread));
 
-
         }
     }
 }
